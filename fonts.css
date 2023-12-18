@@ -13,8 +13,22 @@
 }
 
 @font-face {
+  font-family: "Movement-Indirect";
+  src: url("./fonts/Movement/Movement-IndirectBlack.woff2") format("woff2");
+  font-weight: 900;
+  font-display: swap;
+}
+
+@font-face {
   font-family: "Intel-One";
   src: url("./fonts/IntelOne/IntelOneMono-Regular.woff2") format("woff2");
   font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Intel-One";
+  src: url("./fonts/IntelOne/IntelOneMono-Bold.woff2") format("woff2");
+  font-weight: 600;
   font-display: swap;
 }

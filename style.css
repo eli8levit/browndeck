@@ -3,6 +3,7 @@
 html,
 body {
   margin: 0;
+  /*height: 100%;*/
 }
 
 * {
@@ -14,29 +15,29 @@ body {
   display: flex;
   flex-direction: column;
   overflow-x: hidden;
-  align-items: center;
-  gap: 4em;
   background-color: #000000;
+  padding: 4em 6em;
+  gap: 4em;
 }
 
 .intro {
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
   justify-items: center;
   align-items: center;
-  row-gap: 4em;
-  min-height: 100vh;
+  flex-direction: row;
+  gap: 6em;
+  max-width: 1800px;
+  margin: 0 auto;
 }
 
 .heading {
-  padding: 4em;
   display: flex;
   flex-direction: column;
   justify-content: center;
   grid-row: 1/-1;
   grid-column: 1;
   height: 100%;
+  gap: 1.2em;
 }
 
 h1 {
@@ -45,18 +46,18 @@ h1 {
   font-size: 200px;
   margin: 0;
   line-height: 0.9;
+  max-width: 50%;
 }
 
 h1 span {
   display: inline-flex;
-  gap: 0.2em;
   align-items: center;
 }
 
 h2 {
   color: white;
   font-weight: 200;
-  font-size: 80px;
+  font-size: 66px;
   line-height: 0.9;
   margin: 0;
 }
@@ -67,8 +68,8 @@ h2 {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 140px;
-  height: 140px;
+  padding: 0.04em;
+  margin: 0 0.2em;
 }
 
 .about {
@@ -80,19 +81,22 @@ h2 {
   font-family: "Intel-One";
   justify-content: center;
   height: 100%;
-
-  padding: 4em;
   font-weight: 400;
   color: white;
-  font-size: 20px;
+  font-size: 22px;
   margin: 0;
+  max-width: 500px;
+}
+
+.about bold {
+  font-weight: 600;
 }
 
 .divider {
   height: 1em;
+  margin: 0 auto;
   background-color: #3002c7;
-  width: calc(100% - 8em);
-  margin: 2em auto 10em auto;
+  width: 100%;
 }
 
 .button-contact {
@@ -104,10 +108,10 @@ h2 {
   align-items: center;
   justify-content: center;
   background: white;
-  margin: 0 2em;
   border: none;
   font-size: 30px;
   cursor: pointer;
+  border-radius: 100px;
 }
 
 .button-contact:active {
@@ -115,11 +119,142 @@ h2 {
 }
 
 .button-contact:hover {
+  color: white;
   background-color: #3002c7;
 }
 
 footer {
   display: flex;
   width: 100%;
-  padding-bottom: 4em;
+  margin-top: 10em;
+  padding-bottom: 1em;
+}
+
+.activity {
+  display: inline-flex;
+  padding: 0.06em;
+  border-radius: 100%;
+  background-color: white;
+}
+
+.projects-list {
+  list-style: none;
+  padding: 0;
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  flex-direction: column;
+  gap: 1em;
+}
+
+.section-heading {
+  font-family: Movement-Indirect;
+  font-size: 40px;
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 0.2em;
+}
+
+.projects-item {
+  border-bottom: 0.4em solid white;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  background-color: #19191a;
+  padding: 2em;
+}
+
+.projects-item__heading {
+  font-family: Intel-One;
+  font-size: 30px;
+  margin: 0;
+  font-weight: 600;
+}
+
+.projects-item__description {
+  margin: 0;
+  font-family: Intel-One;
+  font-weight: 400;
+}
+
+@media (max-width: 1200px) {
+  h1 {
+    font-size: 130px;
+  }
+
+  h2 {
+    font-size: 50px;
+  }
+
+  body {
+    padding: 4em;
+  }
+
+  .intro {
+    gap: 4em;
+  }
+
+  .avatar img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .about {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 800px) {
+  .intro {
+    gap: 2em;
+  }
+
+  h1 {
+    font-size: 80px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  .divider {
+    height: 0.8em;
+  }
+
+  .avatar img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .activity img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .about {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 560px) {
+  .intro {
+    flex-direction: column;
+  }
+
+  .divider {
+    height: 0.5em;
+  }
+
+  .button-contact {
+    margin: 0 0.5em;
+    height: 4em;
+    font-size: 20px;
+  }
+
+  .button-contact:hover {
+    background-color: white;
+    color: black;
+  }
 }
