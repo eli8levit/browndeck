@@ -1,34 +1,34 @@
 @font-face {
   font-family: "Movement";
-  src: url("./fonts/Movement/Movement-DirectBlack.woff2") format("woff2");
+  src: url("../fonts/Movement/Movement-DirectBlack.woff2") format("woff2");
   font-weight: 900;
   font-display: swap;
 }
 
 @font-face {
   font-family: "Movement";
-  src: url("./fonts/Movement/Movement-DirectThin.woff2") format("woff2");
+  src: url("../fonts/Movement/Movement-DirectThin.woff2") format("woff2");
   font-weight: 200;
   font-display: swap;
 }
 
 @font-face {
   font-family: "Movement-Indirect";
-  src: url("./fonts/Movement/Movement-IndirectBlack.woff2") format("woff2");
+  src: url("../fonts/Movement/Movement-IndirectBlack.woff2") format("woff2");
   font-weight: 900;
   font-display: swap;
 }
 
 @font-face {
   font-family: "Intel-One";
-  src: url("./fonts/IntelOne/IntelOneMono-Regular.woff2") format("woff2");
+  src: url("../fonts/IntelOne/IntelOneMono-Regular.woff2") format("woff2");
   font-weight: 400;
   font-display: swap;
 }
 
 @font-face {
   font-family: "Intel-One";
-  src: url("./fonts/IntelOne/IntelOneMono-Bold.woff2") format("woff2");
+  src: url("../fonts/IntelOne/IntelOneMono-Bold.woff2") format("woff2");
   font-weight: 600;
   font-display: swap;
 }

@@ -7,7 +7,7 @@
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles/style.css" />
     <title>Document</title>
   </head>
   <body>
@@ -50,9 +50,16 @@
     <section class="projects section">
       <h3 class="section-heading">
         <img src="./images/computer.svg" height="50" width="50" /> Projects
+        <span class="projects-heading__node">(not main work)</span>
       </h3>
       <ul class="projects-list">
         <li class="projects-item">
+          <img
+            src="./images/hodesh-logo.png"
+            height="60"
+            width="60"
+            class="projects-item__logo"
+          />
           <h4 class="projects-item__heading">
             Secret project (work in progress)
           </h4>
@@ -62,6 +69,19 @@
             notifications for the start of each new Jewish month, also known as
             Rosh Hodesh.
           </p>
+          <div class="projects-item__images">
+            <img
+              class="projects-item__image"
+              src="images/hodesh-preview.jpg"
+              height="240"
+              width="100%"
+            />
+            <img
+              class="projects-item__image"
+              src="images/hodesh-preview-dark.jpg"
+              height="240"
+            />
+          </div>
         </li>
         <li class="projects-item">
           <h4 class="projects-item__heading">Ha ish</h4>
@@ -88,8 +108,10 @@
         <img src="./images/chip.svg" height="50" width="50" /> My Teck Stack
       </h3>
     </section>
-    <footer>
+    <footer class="footer">
       <button class="button-contact">Contact me</button>
+      <div class="divider"></div>
+      <p class="footer__text">Created with HTML & CSS ❤️</p>
     </footer>
   </body>
 </html>
