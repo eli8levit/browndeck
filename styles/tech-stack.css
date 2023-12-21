@@ -1,0 +1,33 @@
+.tech-stack__container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  gap: 2rem;
+}
+
+.tech-stack__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.tech-stack__badge {
+  background-color: #3002c7;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+}
+
+.tech-stack__badge-name {
+  font-family: dm;
+  color: white;
+  font-size: 1.2em;
+  width: min-content;
+}

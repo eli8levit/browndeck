@@ -1,0 +1,58 @@
+.projects-list {
+  list-style: none;
+  padding: 0;
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  justify-items: auto;
+  gap: 1.2rem;
+}
+
+.projects-heading__note {
+  font-size: 0.4em;
+  margin-left: 0.4em;
+  opacity: 0.6;
+  font-weight: 200;
+  font-family: Movement;
+}
+
+.projects-item {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  background-color: #2e2e2e;
+  padding: 2rem;
+  padding-bottom: 2.4rem;
+}
+
+.projects-item__heading {
+  font-family: Intel-One;
+  font-size: 1.6rem;
+  margin: 0;
+  font-weight: 600;
+}
+
+.projects-item__logo {
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+}
+
+.projects-item__description {
+  font-family: dm;
+  font-weight: 400;
+  font-size: 1rem;
+  opacity: 0.6;
+  line-height: 1.4;
+}
+
+.projects-item__images {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 0.4rem;
+}
+
+.projects-item__image {
+  object-fit: cover;
+}
