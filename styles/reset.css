@@ -18,6 +18,9 @@ p {
   padding: 0;
 }
 
-image {
+img {
   display: block;
+  max-width: 100%;
+  overflow-clip-margin: border-box;
+  overflow: hidden;
 }

@@ -6,12 +6,16 @@
 
 @media (max-width: 1200px) {
   :root {
-    font-size: 12px;
+    font-size: 13px;
   }
 
   .avatar img {
     width: 120px;
     height: 120px;
+  }
+
+  .projects-item__description {
+    font-size: 1.4rem;
   }
 }
 
@@ -56,6 +60,10 @@
   .activity img {
     width: 25px;
     height: 25px;
+  }
+
+  .projects-item__heading {
+    font-size: 2rem;
   }
 
   .projects-item__description {
