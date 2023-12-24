@@ -53,6 +53,10 @@
     height: 80px;
   }
 
+  .section-heading-container {
+    justify-content: center;
+  }
+
   .projects-list {
     grid-template-columns: auto;
   }
@@ -68,6 +72,11 @@
 
   .projects-item__description {
     font-size: 1.4rem;
+  }
+
+  .photography .photography-layout {
+    grid-template-rows: repeat(5, 12rem);
+    grid-gap: 0.4rem;
   }
 
   .button-contact {

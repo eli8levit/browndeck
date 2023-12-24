@@ -96,7 +96,8 @@ h2 {
   transform: translateY(0.4rem);
 }
 
-.button-contact:hover {
+.button-contact:hover,
+.button-contact:focus {
   color: white;
   background-color: #3002c7;
   border: 0.2rem dotted white;
@@ -128,6 +129,7 @@ footer {
   align-items: center;
   flex-direction: row;
   gap: 0.2rem;
+  flex-wrap: wrap;
 }
 
 .section-heading-container__text {
