@@ -31,7 +31,7 @@
 
 @media (max-width: 800px) {
   body {
-    padding: 2rem 3rem;
+    padding: 2rem;
   }
 
   .intro {
@@ -45,12 +45,20 @@
   }
 
   h2 {
-    font-size: 3.4rem;
+    font-size: 3.6rem;
+  }
+
+  .about {
+    font-size: 1.6rem;
   }
 
   .avatar img {
-    width: 80px;
-    height: 80px;
+    width: 7rem;
+    height: 7rem;
+  }
+
+  .section {
+    gap: 3rem;
   }
 
   .section-heading-container {
@@ -63,6 +71,15 @@
 
   .projects-list {
     grid-template-columns: auto;
+  }
+
+  .project-other-list {
+    flex-direction: column;
+  }
+
+  .project-other-list__item a {
+    height: 6rem;
+    font-size: 1.2rem;
   }
 
   .activity img {

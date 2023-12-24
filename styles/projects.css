@@ -122,6 +122,7 @@
   padding: 1rem 2rem;
   background-color: var(--color-card);
   opacity: 0.9;
+  height: 100%;
 }
 
 .project-other-list__item:hover,
