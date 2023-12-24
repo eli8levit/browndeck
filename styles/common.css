@@ -1,9 +1,19 @@
+:root {
+  --font-dankmono: dm, Monaco, monospace;
+  --font-movement: Movement, Verdana, sans-serif;
+  --font-movement-indirect: Movement-Indirect, Verdana, sans-serif;
+  --font-intelone: Intel-One, Tahoma, monospace;
+
+  --color-theme: #3002c7;
+  --color-card: #2c2c2c;
+}
+
 html {
   height: 100%;
 }
 
 body {
-  font-family: "Movement", sans-serif;
+  font-family: var(--font-movement);
   display: flex;
   flex-direction: column;
   overflow-x: hidden;
@@ -49,7 +59,7 @@ h2 {
 
 .avatar {
   border-radius: 100%;
-  background-color: #3002c7;
+  background-color: var(--color-theme);
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -58,7 +68,7 @@ h2 {
 }
 
 .about {
-  font-family: "Intel-One";
+  font-family: var(--font-intelone);
   margin: auto;
   font-weight: 400;
   color: white;
@@ -66,21 +76,21 @@ h2 {
   max-width: 48rem;
 }
 
-.about bold {
+.about b {
   font-weight: 600;
 }
 
 .divider {
   height: 1rem;
   margin: 0 auto;
-  background-color: #3002c7;
+  background-color: var(--color-theme);
   width: 100%;
 }
 
 .button-contact {
   width: 100%;
   height: 6rem;
-  font-family: Movement;
+  font-family: var(--font-movement);
   font-weight: 800;
   display: flex;
   align-items: center;
@@ -90,6 +100,7 @@ h2 {
   font-size: 30px;
   cursor: pointer;
   border-radius: 100px;
+  text-decoration: none;
 }
 
 .button-contact:active {
@@ -99,7 +110,7 @@ h2 {
 .button-contact:hover,
 .button-contact:focus {
   color: white;
-  background-color: #3002c7;
+  background-color: var(--color-theme);
   border: 0.2rem dotted white;
   box-shadow: 0 0 3rem 0.4rem rgba(255, 255, 255, 0.4);
 }
@@ -133,7 +144,7 @@ footer {
 }
 
 .section-heading-container__text {
-  font-family: Movement-Indirect;
+  font-family: var(--font-movement-indirect);
   font-size: 2.8rem;
   color: white;
   display: flex;
@@ -155,7 +166,7 @@ footer {
 }
 
 .footer__text {
-  font-family: dm;
+  font-family: var(--font-dankmono);
   font-size: 1rem;
   font-weight: 600;
   text-align: center;

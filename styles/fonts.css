@@ -7,7 +7,7 @@
 
 @font-face {
   font-family: "Movement";
-  src: url("../fonts/Movement/Movement-DirectThin.woff2") format("woff2");
+  src: url("../fonts/Movement/Movement-IndirectThin.woff2") format("woff2");
   font-weight: 200;
   font-display: swap;
 }

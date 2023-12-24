@@ -16,7 +16,7 @@
 }
 
 .tech-stack__badge {
-  background-color: #3002c7;
+  background-color: var(--color-theme);
   border-radius: 100%;
   display: flex;
   align-items: center;
@@ -26,7 +26,7 @@
 }
 
 .tech-stack__badge-name {
-  font-family: dm;
+  font-family: var(--font-dankmono);
   color: white;
   font-size: 1.2em;
   width: min-content;

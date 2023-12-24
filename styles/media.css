@@ -57,6 +57,10 @@
     justify-content: center;
   }
 
+  .tech-stack__container {
+    justify-content: center;
+  }
+
   .projects-list {
     grid-template-columns: auto;
   }
@@ -64,6 +68,11 @@
   .activity img {
     width: 25px;
     height: 25px;
+  }
+
+  .projects-item .projects-item__link {
+    box-shadow: none;
+    font-size: 1rem;
   }
 
   .projects-item__heading {
@@ -79,6 +88,10 @@
     grid-gap: 0.4rem;
   }
 
+  .photography__description {
+    text-align: center;
+  }
+
   .button-contact {
     height: 6rem;
     font-size: 20px;
@@ -86,6 +99,7 @@
 
   .button-contact:hover {
     background-color: white;
-    color: black;
+    color: var(--color-theme);
+    box-shadow: none;
   }
 }
