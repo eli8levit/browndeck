@@ -21,7 +21,7 @@
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
-  background-color: #212121;
+  background-color: #2c2c2c;
   padding: 2rem;
   padding-bottom: 2.4rem;
 }
@@ -60,15 +60,68 @@
   font-size: 1.2rem;
   opacity: 0.6;
   line-height: 1.4;
+  margin-bottom: 1rem;
 }
 
-.projects-item__images {
+.projects-item__link {
+  font-size: 0.9rem;
+  margin-top: auto;
+  padding: 0.5rem 1.2rem;
+  width: max-content;
+  margin-left: auto;
+  border-radius: 1rem;
+  font-family: Intel-One;
+  font-weight: 600;
+  color: black;
+  text-decoration: none;
+}
+
+.projects-item__link:hover {
+  background-color: #3002c7;
+  color: white;
+  box-shadow:
+    0 0 0 0.1rem white,
+    0 0 1rem 0.2rem rgba(255, 255, 255, 0.4);
+  font-weight: 400;
+}
+
+.projects-item__link--hodesh {
+  background-color: white;
+}
+
+.projects-item__link--am {
+  background-color: #d4e5ff;
+}
+
+.projects-item__link--ish {
+  background-color: #77ffbd;
+}
+
+.projects-subheading {
+  color: white;
+  font-size: 1.4rem;
+}
+
+.project-other-list {
   display: flex;
-  justify-content: center;
   flex-direction: row;
-  gap: 0.4rem;
+  gap: 1rem;
 }
 
-.projects-item__image {
-  object-fit: cover;
+.project-other-list__item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: stretch;
+  gap: 0.8rem;
+  color: white;
+  font-family: Intel-One;
+  font-weight: 400;
+  padding: 1rem 2rem;
+  background-color: #2c2c2c;
+  opacity: 0.9;
+}
+
+.project-other-list__item:hover {
+  box-shadow: 0 0 0 0.2rem white;
 }
