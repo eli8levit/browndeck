@@ -122,13 +122,6 @@ footer {
   padding-bottom: 1rem;
 }
 
-.activity {
-  display: inline-flex;
-  padding: 0.06rem;
-  border-radius: 100%;
-  background-color: white;
-}
-
 .section {
   display: flex;
   flex-direction: column;
