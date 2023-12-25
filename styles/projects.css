@@ -1,5 +1,4 @@
 .projects-list {
-  list-style: none;
   padding: 0;
   color: white;
   display: grid;
@@ -33,6 +32,18 @@
   font-weight: 600;
 }
 
+.projects-item__heading--am {
+  color: #d4e5ff;
+}
+
+.projects-item__heading--hodesh {
+  color: #eeeeee;
+}
+
+.projects-item__heading--ish {
+  color: #77ffbd;
+}
+
 .projects-item__heading-note {
   font-size: 0.8em;
   opacity: 0.8;
@@ -56,11 +67,15 @@
 
 .projects-item__description {
   font-family: var(--font-dankmono);
+  color: #e9e9e9;
   font-weight: 400;
   font-size: 1.2rem;
-  opacity: 0.6;
   line-height: 1.4;
   margin-bottom: 1rem;
+}
+
+.projects-item__description b {
+  color: #77ffbd;
 }
 
 .projects-item__link {
@@ -87,7 +102,7 @@
 }
 
 .projects-item__link--hodesh {
-  background-color: white;
+  background-color: #eeeeee;
 }
 
 .projects-item__link--am {
@@ -133,7 +148,6 @@
   font-weight: 500;
   padding: 1rem 2rem;
   background-color: var(--color-card);
-  opacity: 0.9;
   height: 100%;
 }
 

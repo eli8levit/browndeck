@@ -95,6 +95,7 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 1rem;
   background: white;
   color: black;
   border: none;
@@ -102,6 +103,12 @@ h2 {
   cursor: pointer;
   border-radius: 100px;
   text-decoration: none;
+}
+
+.button-contact svg {
+  fill: black;
+  width: 1.6rem;
+  height: 1.6rem;
 }
 
 .button-contact:active {
@@ -114,6 +121,11 @@ h2 {
   background-color: var(--color-theme);
   border: 0.2rem dotted white;
   box-shadow: 0 0 3rem 0.4rem rgba(255, 255, 255, 0.4);
+}
+
+.button-contact:hover svg,
+.button-contact:focus svg {
+  fill: white;
 }
 
 footer {
