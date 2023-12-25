@@ -96,6 +96,7 @@ h2 {
   align-items: center;
   justify-content: center;
   background: white;
+  color: black;
   border: none;
   font-size: 30px;
   cursor: pointer;
@@ -153,6 +154,7 @@ footer {
 }
 
 .footer {
+  padding: 0;
   display: flex;
   flex-direction: column;
   gap: 1.4rem;
@@ -161,8 +163,30 @@ footer {
 .footer__text {
   font-family: var(--font-dankmono);
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 500;
   text-align: center;
   color: white;
   opacity: 0.8;
+}
+
+.footer__bottom-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.footer .divider {
+  height: 0.4rem;
+}
+
+.footer__github {
+  width: 2.4rem;
+  height: 2.4rem;
+  fill: white;
+}
+
+.footer__github:hover {
+  fill: #77ffbd;
 }
